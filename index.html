@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <title>#ESCN</title>
+    <title>Tanvi's World</title>
     <head>
         <link rel="shortcut icon" type="image/png" href="./favicon.png"/>
     </head>
@@ -59,13 +59,16 @@ hr {
   </div>
   <div class="middle">
     <h1>Tanvi Hubballi</h1>
-      <img src='./tanvi.gif' alt='-------'>
+      <img src='./tanvi.gif' alt='-------' onclick="showPicture()">
     <hr>
     <p id="demo" style="font-size:30px"></p>
   </div>
   <div class="bottomleft">
     <p>&copy;Authors:Prashant Hubballi,No rights received</p>
   </div>
+</div>
+<div>
+<img id="bigpic" style="display:none;" src='./tanvi-gif.gif' alt='gif'>
 </div>
 
 <script>
@@ -97,6 +100,10 @@ var countdownfunction = setInterval(function() {
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);
+function showPicture() {
+  var img = document.getElementById('bigpic')
+  img.style.display = "block";
+} 
 </script>
 
 </body>
