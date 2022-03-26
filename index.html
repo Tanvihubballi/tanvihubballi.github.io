@@ -61,6 +61,10 @@ hr {
     <h1>Tanvi Hubballi</h1>
       <img src='./tanvi.gif' alt='-------' onclick="showPicture()">
       <img id="bigpic" style="display:none;" src='./tanvi-gif.gif' alt='gif'>
+     <video id="vid1" style="display:none;" width="320" height="240" controls>
+  <source src="./tanvi-1.mp4" type="video/mp4" >
+Your browser does not support the video tag.
+</video>
     <hr>
     <p id="demo" style="font-size:30px"></p>
   </div>
@@ -102,8 +106,8 @@ var countdownfunction = setInterval(function() {
     }
 }, 1000);
 function showPicture() {
-  var img = document.getElementById('bigpic')
-  img.style.display = "block";
+  var vd = document.getElementById('vid1')
+  vd.style.display = "block";
 } 
 </script>
 
